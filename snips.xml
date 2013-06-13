@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<snips>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JAVASCRIPT VOID LINKS
+javascript: void(0)
+]]></code>
+</snip>
+
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JAVASCRIPT REDIRECT WITH QUERY PARAMS
+var query = window.location.search;
+query = query.indexOf('?') == 0 ? query.substring(1) : query;
+var redirectFirst = 'https://opensky.com/p/oskycreditp-slide';
+var redirectSecond = '';
+var questionMark = query.length || redirectSecond.length ? '?' : '';
+var ampersand = query.length && redirectSecond.length && redirectSecond[0] != '#' ? '&' : '';
+window.location.replace(redirectFirst + questionMark + query + ampersand + redirectSecond);
+]]></code>
+</snip>
+ 
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JQUERY CLICK
+$('#div').click(function() {
+  $('#target').click();
+});
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JQUERY DOM READY
+$(document).ready(function() {
+  // Handler for .ready() called.
+});
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JQUERY CHECK FOR DUPLICATE IDS
+$('[id]').each(function(){
+  var ids = $('[id='+this.id+']');
+  if(ids.length>1 && ids[0]==this)
+    console.warn('Multiple IDs #'+this.id);
+});
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JAVASCRIPT BROWSER DETECTION USING NAVIGATOR
+if(navigator){
+//if browser support navigator object 
+if((navigator.userAgent.match(/iPad/i))) {
+//if device is an ipad
+}
+if((navigator.userAgent.match(/MSIE/i))) {
+//if IE
+}
+}
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JAVASCRIPT KEEP CHECKING UNTIL JQUERY LOADS
+var jc=self.setInterval(jcheck,50);
+
+function jcheck()
+{
+if (typeof jQuery == 'undefined') {  
+    // jQuery is not loaded  
+} else {
+    // jQuery is loaded
+jc=window.clearInterval(jc);
+}
+}
+]]></code>
+</snip>
+
+
+<snip>
+<type>css</type>
+<code><![CDATA[
+//CSS FULL BACKGROUND
+background-image: url(https://d2n1ysbaeslvpw.cloudfront.net/landing/bg_mollysims_01.jpg) !important;
+background-color: white;
+background-repeat:no-repeat;
+background-position: left top;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+]]></code>
+</snip>
+
+<snip>
+<type>css</type>
+<code><![CDATA[
+/* CSS ANIMATE TRANSITIONS*/
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//CHECK FOR HTML5 LOCALSTORAGE (WITH MODERNIZR)
+if (Modernizr.localstorage) {
+    // browser supports local storage
+}
+else {
+    // browser doesn't support local storage
+}
+]]></code>
+</snip>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//FUNCTION TO DYNAMICALLY LOAD ONE OR MORE SCRIPTS
+function loadScripts(array,callback){
+    var loader = function(src,handler){
+        var script = document.createElement("script");
+        script.src = src;
+        script.onload = script.onreadystatechange = function(){
+        script.onreadystatechange = script.onload = null;
+                handler();
+        }
+        var head = document.getElementsByTagName("head")[0];
+        (head || document.body).appendChild( script );
+    };
+    (function(){
+        if(array.length!=0){
+                loader(array.shift(),arguments.callee);
+        }else{
+                callback && callback();
+        }
+    })();
+}
+//CODE TO USE THE FUNCTION
+loadScripts([
+   "script1.js",
+   "script2.js"
+],function(){
+    //code here runs after scripts are loaded
+});
+
+
+]]></code>
+</snip>
+
+
+</snips>

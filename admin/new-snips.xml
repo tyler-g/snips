@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<snips>
+
+<snip>
+<type>javascript</type>
+<code><![CDATA[
+//JAVASCRIPT VOID LINKS
+javascript: void(0)
+]]></code>
+</snip>
+
+<snip><type>javascript</type><code><![CDATA[fsdfsdf]]></code></snip><snip><type>javascript</type><code><![CDATA[fkkk it]]></code></snip><snip><type>javascript</type><code><![CDATA[]]></code></snip><snip><type>javascript</type><code><![CDATA[]]></code></snip><snip><type>javascript</type><code><![CDATA[]]></code></snip><snip><type>javascript</type><code><![CDATA[]]></code></snip><snip><type>css</type><code><![CDATA[/* CSS ANIMATE TRANSITIONS*/
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;]]></code></snip><snip><type>css</type><code><![CDATA[//CSS FULL BACKGROUND
+background-image: url(https://d2n1ysbaeslvpw.cloudfront.net/landing/bg_mollysims_01.jpg) !important;
+background-color: white;
+background-repeat:no-repeat;
+background-position: left top;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+]]></code></snip><snip><type>css</type><code><![CDATA[]]></code></snip><snip><type>javascript</type><code><![CDATA[]]></code></snip></snips>

@@ -1,0 +1,8 @@
+#Auth
+AuthUserFile /home/bimbomst/.htpasswds/.htpasswd
+
+AuthName "snips admin"
+
+AuthType Basic
+
+ require valid-user
